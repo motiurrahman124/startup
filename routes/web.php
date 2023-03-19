@@ -8,7 +8,7 @@ use App\Http\Controllers\AuthController;
 
 
 Route::get('/', [HomeController::class, 'index'])->name('home');
-Route::post('/store', [BlogController::class, 'store']);
+Route::post('/appointment_store', [HomeController::class, 'store']);
 
 //BackEnd Routs
 

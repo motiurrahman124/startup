@@ -12,7 +12,7 @@ class BlogController extends Controller
 {
     public function create()
     {
-        return view('backend.layouts.blog.create');
+        return view('admin.layouts.blog.create');
     }
     public function store(Request $request)
     {

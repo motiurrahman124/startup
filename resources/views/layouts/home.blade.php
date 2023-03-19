@@ -342,7 +342,7 @@
                 </div>
                 <div class="col-lg-5">
                     <div class="bg-primary rounded h-100 d-flex align-items-center p-5 wow zoomIn" data-wow-delay="0.9s">
-                        <form action="{{ url('/store') }}" method="post">
+                        <form action="{{ url('appointment_store') }}" method="post">
                             @csrf
                             <div class="row g-3">
                                 <div class="col-xl-12">

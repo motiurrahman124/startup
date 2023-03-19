@@ -8,11 +8,11 @@ use Illuminate\Http\Request;
 class DashboardController extends Controller
 {
     public function index(){
-        return view('backend.layouts.index');
+        return view('admin.layouts.index');
     }
 
     public function appointment(){
         $appointment = Appointment::orderBy('id','desc')->get();
-        return view('backend.layouts.appointment',['appointments'=>$appointment]);
+        return view('admin.layouts.appointment.index',['appointments'=>$appointment]);
     }
 }
